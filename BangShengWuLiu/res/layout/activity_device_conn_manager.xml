@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/common_topbar"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <RelativeLayout 
+	        android:id="@+id/rl_top"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="30dip"
+	        android:paddingRight="30dip"
+	        android:paddingTop="25dip"
+	        android:paddingBottom="20dip"
+	        android:background="@color/white">
+	        <ImageView 
+	            android:id="@+id/iv_device"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/img_pos"/>
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/iv_device"
+	            android:layout_marginLeft="20dip"
+	            android:layout_centerVertical="true"
+	            android:orientation="vertical">
+	            <TextView 
+		            android:id="@+id/tv_curr_device_label"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="当前设备"
+		            android:textSize="@dimen/text_label_small"
+		            android:textColor="@color/text_label"/>
+		        <TextView 
+		            android:id="@+id/tv_curr_device"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="5dip"
+		            android:text="null"
+		            android:textSize="@dimen/text_label_larger"
+		            android:textColor="@color/text_label_red"/>
+	        </LinearLayout>
+	        <ImageView 
+	            android:id="@+id/iv_device_conn_status"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/img_connect"/>
+	    </RelativeLayout>
+	    
+	    <TextView 
+		    style="@style/text_label"
+		    android:id="@+id/tv_devices_label"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/rl_top"
+		    android:layout_marginTop="@dimen/dimen_big"
+		    android:layout_marginLeft="@dimen/dimen_big"
+		    android:text="设备列表"
+		    android:textSize="@dimen/text_label_small"/>
+	    
+	    <Button 
+	        style="@style/button1"
+	        android:id="@+id/btn_add_device"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginTop="50dip"
+	        android:layout_marginLeft="@dimen/button_margin_left"
+	        android:layout_marginRight="@dimen/button_margin_right"
+	        android:layout_marginBottom="@dimen/page_margin_bottom"
+	        android:text="添加设备"/>
+	    
+	    <ListView 
+	        android:id="@+id/lv_devices"
+	        style="@style/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	        android:layout_above="@id/btn_add_device"
+	        android:background="@color/white"
+	        android:layout_below="@id/tv_devices_label">
+	    </ListView>
+	</RelativeLayout>
+	
+</LinearLayout>

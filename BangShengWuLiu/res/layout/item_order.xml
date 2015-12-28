@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dip"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    <ImageView 
+	        android:id="@+id/iv_merchant"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/img_store"/>
+	    <TextView 
+	        android:id="@+id/tv_merchant"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/iv_merchant"
+	        android:layout_marginLeft="10dip"
+	        android:text="天猫"/>
+	    <TextView 
+	        android:id="@+id/tv_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:textSize="@dimen/text_label_litter"
+	        android:textColor="@color/text_label"
+	        android:text="2015-06-20 14:50:30"/>
+	</RelativeLayout>
+	
+	<View android:layout_width="match_parent" android:layout_height="0.8dip"
+	    android:background="@color/line_gray" android:layout_marginTop="@dimen/dimen_normal"/>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="8dip"
+	    android:orientation="horizontal">
+	    <TextView 
+	        style="@style/text_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="订单号："/>
+	    <TextView 
+	        style="@style/text_label"
+	        android:id="@+id/tv_orderNo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="LB1994023145689"
+	        android:textColor="@color/text_label_yellow"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        style="@style/text_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="收件地址："/>
+	    <TextView 
+	        style="@style/text_label"
+	        android:id="@+id/tv_address"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="南京市长江路99号"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        style="@style/text_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="收货人："/>
+	    <TextView 
+	        style="@style/text_label"
+	        android:id="@+id/tv_receipter"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="章三"/>
+	    <TextView 
+	        style="@style/text_label"
+	        android:id="@+id/tv_phoneNumber"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dip"
+	        android:text="13500000000"/>
+	</LinearLayout>
+	
+	<View android:layout_width="match_parent" android:layout_height="0.8dip"
+	    android:background="@color/line_gray" android:layout_marginTop="@dimen/dimen_normal"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/dimen_normal">
+	    <ImageView 
+	        android:id="@+id/iv_pay_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/img_cash"/>
+	    <TextView 
+	        style="@style/text_label"
+	        android:id="@+id/tv_pay_type"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/iv_pay_icon"
+	        android:layout_marginLeft="@dimen/dimen_normal"
+	        android:text="现金支付"/>
+	    <TextView 
+	        style="@style/text_label"
+	        android:id="@+id/tv_order_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="已签收"
+	        android:textSize="@dimen/text_label_large"
+	        android:textColor="@color/text_label_yellow"/>
+	</RelativeLayout>
+</LinearLayout>

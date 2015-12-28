@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dip"
+    android:paddingBottom="15dip"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    style="@style/text_label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="请选择签收类型："
+	    android:textSize="@dimen/text_label_large"
+	    android:background="@drawable/list_select_color"/>
+	
+	<TextView 
+	    android:id="@+id/tv_1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:padding="8dip"
+	    android:text="快件签收"
+	    android:textSize="@dimen/text_label_large"
+	    android:textColor="@color/text_label_green"
+	    android:background="@drawable/list_select_color"/>
+	
+	<View android:layout_width="match_parent" android:layout_height="1dip" android:background="@color/line_gray"/>
+	
+	<TextView 
+	    android:id="@+id/tv_2"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:padding="8dip"
+	    android:text="反馈问题件"
+	    android:textSize="@dimen/text_label_large"
+	    android:textColor="@color/text_label_red"/>
+</LinearLayout>

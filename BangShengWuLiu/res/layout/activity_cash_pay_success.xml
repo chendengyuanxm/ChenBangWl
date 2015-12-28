@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/common_topbar"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <ImageView 
+	        android:id="@+id/iv_success"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/dimen_large"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/icon_pay_success"/>
+	    <TextView 
+	        android:id="@+id/tv_success"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/dimen_normal"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@id/iv_success"
+	        android:text="现金缴款成功！"
+	        android:textStyle="bold"
+	        android:textSize="@dimen/text_label_larger"
+	        android:textColor="@color/text_label_green"
+	        android:visibility="gone"/>
+	    
+	    <Button 
+	        style="@style/button1"
+	        android:id="@+id/btn_confirm"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/button_margin_left"
+	        android:layout_marginRight="@dimen/button_margin_right"
+	        android:layout_marginBottom="@dimen/page_margin_bottom"
+	        android:layout_alignParentBottom="true"
+	        android:text="完成"/>
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/common_topbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.zxing.view.ViewfinderView
+                android:id="@+id/viewfinder_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+			
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/black"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/btn_batch_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="批量扫描"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_label"
+                    android:drawableTop="@drawable/selector_batch_scan"
+                    android:background="@null" />
+                
+                <Button
+                    android:id="@+id/btn_open_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="打开闪光灯"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_label"
+                    android:drawableTop="@drawable/selector_flash"
+                    android:background="@null" />
+            </LinearLayout>
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/ll_bottom">
+                <Button 
+	           	    style="@style/button1"
+	           	    android:id="@+id/btn_submit"
+	           	    android:layout_width="match_parent"
+	           	    android:layout_height="wrap_content"
+	           	    android:layout_alignParentBottom="true"
+	           	    android:layout_marginLeft="20dip"
+	           	    android:layout_marginRight="20dip"
+	           	    android:layout_marginTop="10dip"
+	           	    android:layout_marginBottom="10dip"
+	           	    android:visibility="gone"
+	           	    android:text="确认"/>
+                <ListView
+	                android:id="@+id/lv"
+	                style="@style/listView"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:divider="@color/text_label"
+	                android:dividerHeight="0.7dip"
+	                android:clickable="false"
+	                android:layout_above="@id/btn_submit" >
+	           	</ListView>
+	            
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

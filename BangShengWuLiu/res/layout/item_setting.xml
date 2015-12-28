@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_small" >
+    
+	<ImageView 
+	    android:id="@+id/icon"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="@dimen/dimen_big"
+	    android:layout_marginBottom="@dimen/dimen_normal"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/icon_setting_update"/>
+	
+	<ImageView 
+	    android:id="@+id/arrow"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="@dimen/dimen_big"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/arrow_right"/>
+	
+	<TextView 
+	    style="@style/text_label"
+	    android:id="@+id/label"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="@dimen/dimen_normal"
+	    android:layout_centerVertical="true"
+	    android:layout_toRightOf="@id/icon"
+	    android:text="text"/>
+	
+	<View 
+	    android:id="@+id/v_line"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dip"
+	    android:layout_alignLeft="@id/icon"
+	    android:background="@color/line_gray"
+	    android:layout_below="@id/icon"/>
+</RelativeLayout>

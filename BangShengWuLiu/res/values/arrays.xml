@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页功能 -->
+    <string-array name="home_function_labels">
+        <item>任务列表</item>
+        <item>派件签收</item>
+        <item>配送查询</item>
+        <item>现金缴款</item>
+        <item>结算汇总</item>
+        <item>pos管理</item>
+    </string-array>
+    <array name="home_function_icons">
+        <item>@drawable/selector_order_list</item>
+        <item>@drawable/selector_order_receipt</item>
+        <item>@drawable/selector_order_query</item>
+        <item>@drawable/selector_cash_pay</item>
+        <item>@drawable/selector_account</item>
+        <item>@drawable/selector_pos_manager</item>
+    </array>
+    
+    <!-- 设置项 -->
+    <string-array name="setting_labels">
+        <item>设备连接管理</item>
+        <item>内外网切换</item>
+        <item>软件更新</item>
+        <item>GPS信息查看</item>
+    </string-array>
+    <array name="setting_icons">
+        <item>@drawable/icon_setting_userinfo</item>
+        <item>@drawable/icon_setting_internet</item>
+        <item>@drawable/icon_setting_update</item>
+        <item>@drawable/icon_setting_gps</item>
+    </array>
+    
+    <!-- POS管理 -->
+    <string-array name="pos_manager_labels">
+        <item>余额查询</item>
+        <item>签到</item>
+        <!-- 
+        <item>末笔打印</item>
+        <item>结算</item>
+        <item>交易撤销</item>
+        <item>末笔交易查询</item>
+        <item>固件升级</item>
+         -->
+    </string-array>
+    <array name="pos_manager_icons">
+        <item>@drawable/img_search</item>
+        <item>@drawable/img_confirm</item>
+        <!-- 
+        <item>@drawable/img_account_receipt</item>
+        <item>@drawable/img_confirm</item>
+        <item>@drawable/img_confirm</item>
+        <item>@drawable/img_confirm</item>
+        <item>@drawable/img_confirm</item>
+    	 -->
+    </array>
+</resources>

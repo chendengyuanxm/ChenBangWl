@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.devin.bangsheng"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/common_topbar"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/page_margin_top"
+        android:layout_marginLeft="@dimen/page_margin_left"
+        android:layout_marginRight="@dimen/page_margin_right"
+        android:orientation="horizontal" >
+        <com.devin.bangsheng.view.IconEditText 
+            android:id="@+id/iet_orderNo"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        app:leftIcon="@drawable/icon_search"
+	        app:etHint="请扫描或输出订单号" />
+	    <Button 
+	        android:id="@+id/btn_scan"
+	        android:layout_width="40dip"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="10dip"
+	        android:background="@drawable/selector_scan"/>
+    </LinearLayout>
+    
+    <Button 
+        style="@style/button1"
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/button_margin_left"
+	    android:layout_marginRight="@dimen/button_margin_right"
+	    android:layout_marginTop="@dimen/button_margin_top"
+        android:text="查询"/>
+</LinearLayout>

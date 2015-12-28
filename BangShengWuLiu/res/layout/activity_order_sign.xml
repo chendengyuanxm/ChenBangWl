@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/common_topbar"/>
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    <Button
+            android:id="@+id/btn_confirm"
+            style="@style/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/page_margin_bottom"
+            android:layout_marginLeft="@dimen/button_margin_left"
+            android:layout_marginRight="@dimen/button_margin_right"
+            android:text="确认" />
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="@dimen/page_margin_left"
+	        android:paddingRight="@dimen/page_margin_right"
+	        android:paddingTop="@dimen/page_margin_top"
+	        android:orientation="vertical">
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+	            <TextView style="@style/text_label"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="代收货款总金额："/>
+	            <TextView 
+	                android:id="@+id/tv_amount"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="@dimen/text_label_large"
+	                android:textColor="@color/text_label_red"/>
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/dimen_normal"
+	            android:orientation="horizontal">
+	            <TextView style="@style/text_label"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="订单数量："/>
+	            <TextView 
+	                android:id="@+id/tv_num"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="@dimen/text_label_large"
+	                android:textColor="@color/text_label_red"/>
+	        </LinearLayout>
+	        
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="0.8dip"
+	            android:layout_marginTop="@dimen/dimen_normal"
+	            android:background="@color/line_gray" />
+	        
+	        <RadioGroup 
+	            android:id="@+id/rg_signer"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/dimen_normal"
+	            android:orientation="horizontal">
+	            <TextView style="@style/text_label"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="签收人："/>
+	            <RadioButton 
+	                style="@style/radiobutton"
+	                android:id="@+id/rb_signer1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:checked="true"
+	                android:text="本人签收"/>
+	            <RadioButton 
+	                style="@style/radiobutton"
+	                android:id="@+id/rb_signer2"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="他人签收"/>
+	        </RadioGroup>
+	        
+	        <RadioGroup 
+	            android:id="@+id/rg_payway"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/dimen_normal"
+	            android:orientation="horizontal">
+	            <TextView style="@style/text_label"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="收款方式："/>
+	            <RadioButton 
+	                style="@style/radiobutton"
+	                android:id="@+id/rb_card"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:checked="true"
+	                android:text="刷卡"/>
+	            <RadioButton 
+	                style="@style/radiobutton"
+	                android:id="@+id/rb_cash"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="现金"/>
+	        </RadioGroup>
+	        
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/dimen_normal"
+	            android:orientation="horizontal">
+	            <TextView style="@style/text_label"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="签收人："/>
+	            <EditText 
+	                style="@style/editText"
+	                android:id="@+id/et_signer"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:singleLine="true"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

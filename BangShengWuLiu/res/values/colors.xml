@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全局的一些颜色定义 -->
+    <color name="app_background">#f1f1f2</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="green">#32b16c</color>
+    <color name="red">#f06141</color>
+    <color name="blue">#4b93f0</color>
+    <color name="cyan">#2dc9ca</color>
+    <color name="cyaner">#24a1a2</color>
+    <color name="yellow">#ff9700</color>
+    <color name="yellower">#cc7900</color>
+    <color name="gray">#e1e2e3</color>
+    
+    <!-- 部分控件颜色定义 -->
+    <color name="button_1">#2dc9ca</color>
+    <color name="button_1_pressed">#24a1a2</color>
+    <color name="button_2">#ff9700</color>
+    <color name="button_2_pressed">#cc7900</color>
+    
+    <!-- 文字颜色定义 -->
+    <color name="text_label">#999999</color>
+    <color name="text_label_black">#000000</color>
+    <color name="text_label_red">#f06141</color>
+    <color name="text_label_gray">#999999</color>
+    <color name="text_label_grayer">#666666</color>
+    <color name="text_label_white">#efefef</color>
+    <color name="text_label_green">#32b16c</color>
+    <color name="text_label_yellow">#cc7900</color>
+    
+    <!-- 其他listview选中后item颜色 -->
+    <color name="list_item_pressed_bg">#f1f1f2</color>
+    <!-- 灰色分割线 -->
+    <color name="line_gray">#e6e6e6</color>
+    <!-- topbar背景 -->
+    <color name="topbar_bg">#4b93f0</color>
+    
+    
+    <!-- loginActivity 背景 -->
+    <color name="login_bg">#4b93f0</color>
+    
+    <!-- 扫码 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color> 
+</resources>

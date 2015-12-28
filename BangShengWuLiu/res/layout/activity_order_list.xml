@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/common_topbar"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="@dimen/dimen_big"
+	    android:paddingRight="@dimen/dimen_big"
+	    android:paddingTop="@dimen/dimen_normal"
+	    android:paddingBottom="@dimen/dimen_normal"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="未签收"
+	        android:textSize="@dimen/text_label_large"
+	        android:textColor="@color/text_label_grayer"/>
+	    <TextView 
+	        android:id="@+id/tv_not_receive"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="0"
+	        android:textSize="@dimen/text_label_large"
+	        android:textColor="@color/text_label_yellow"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="个"
+	        android:textSize="@dimen/text_label_large"
+	        android:textColor="@color/text_label_grayer"/>
+	    
+	    <View 
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:visibility="invisible"/>
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="总共"
+	        android:textSize="@dimen/text_label_large"
+	        android:textColor="@color/text_label_grayer"/>
+	    <TextView 
+	        android:id="@+id/tv_total"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="0"
+	        android:textSize="@dimen/text_label_large"
+	        android:textColor="@color/cyan"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="个"
+	        android:textSize="@dimen/text_label_large"
+	        android:textColor="@color/text_label_grayer"/>
+	</LinearLayout>
+	
+	<com.devin.framework.view.PullListView 
+	    style="@style/listView"
+	    android:id="@+id/plv_orders"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:divider="@null"
+	    android:dividerHeight="@dimen/dimen_normal"/>
+</LinearLayout>

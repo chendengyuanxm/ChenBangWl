@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_more_small">5dip</dimen>
+    <dimen name="dimen_small">8dip</dimen>
+    <dimen name="dimen_normal">10dip</dimen>
+    <dimen name="dimen_big">15dip</dimen>
+    <dimen name="dimen_large">20dip</dimen>
+    <dimen name="dimen_larger">30dip</dimen>
+    <dimen name="dimen_largest">40dip</dimen>
+    <!-- 每个页面的边距定义 -->
+    <dimen name="page_margin_left">10dip</dimen>
+    <dimen name="page_margin_right">10dip</dimen>
+    <dimen name="page_margin_top">10dip</dimen>
+    <dimen name="page_margin_bottom">20dip</dimen>
+    <!-- 按钮距离 -->
+    <dimen name="button_margin_left">30dip</dimen>
+    <dimen name="button_margin_right">30dip</dimen>
+    <dimen name="button_margin_top">30dip</dimen>
+    <!-- 字体 -->
+    <dimen name="text_label">14sp</dimen>
+    <dimen name="text_label_litter">10sp</dimen>
+    <dimen name="text_label_small">12sp</dimen>
+    <dimen name="text_label_normal">14sp</dimen>
+    <dimen name="text_label_large">16sp</dimen>
+    <dimen name="text_label_larger">18sp</dimen>
+    <!-- 标题栏高度 -->
+    <dimen name="topbar_height">50dip</dimen>
+    <!-- gridView horizonal space -->
+    <dimen name="gridview_horizonal_space">30dip</dimen>
+    <dimen name="gridview_vertical_space">15dip</dimen>
+</resources>

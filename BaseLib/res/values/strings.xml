@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">BaseLib</string>
+	<string name="dialog_confirm">确定</string>
+    <string name="dialog_cancel">取消</string>
+    
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_load_all">加载完成</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新…</string>
+    <string name="p2refresh_doing_end_refresh">加载中…</string>
+    <string name="p2refresh_refresh_lasttime">最近更新 : </string>
+    
+</resources>

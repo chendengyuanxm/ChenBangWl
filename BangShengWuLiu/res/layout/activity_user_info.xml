@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+	<include layout="@layout/common_topbar"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_user"
+	    android:layout_width="90dip"
+	    android:layout_height="90dip"
+	    android:layout_marginTop="@dimen/dimen_largest"
+	    android:src="@drawable/icon_portait"/>
+	
+	<TextView
+	    android:id="@+id/tv_userName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/dimen_normal"
+	    android:textSize="@dimen/text_label_larger"
+	    android:textColor="@color/text_label"
+	    android:text="张三"/>
+	<TextView 
+	    style="@style/text_label"
+	    android:id="@+id/tv_id"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/dimen_normal"
+	    android:text="工号：000001"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white"
+	    android:layout_marginTop="@dimen/dimen_larger"
+	    android:paddingTop="@dimen/dimen_normal"
+	    android:paddingBottom="@dimen/dimen_normal"
+	    android:paddingLeft="@dimen/dimen_big"
+	    android:paddingRight="@dimen/dimen_big"
+	    android:orientation="vertical">
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/icon_phone"/>
+	        <TextView 
+	            style="@style/text_label"
+	            android:id="@+id/tv_phoneNumber"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/dimen_large"
+	            android:text="1580000000"/>
+	    </LinearLayout>
+	    <View android:layout_width="match_parent" android:layout_height="0.8dip" android:background="@color/line_gray"
+	        android:layout_marginTop="@dimen/dimen_normal"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/dimen_normal"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/icon_time"/>
+	        <TextView 
+	            style="@style/text_label"
+	            android:id="@+id/tv_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/dimen_large"
+	            android:text="8:30-18:00"/>
+	    </LinearLayout>
+	    <View android:layout_width="match_parent" android:layout_height="0.8dip" android:background="@color/line_gray"
+	        android:layout_marginTop="@dimen/dimen_normal"/>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/dimen_normal"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/icon_gps"/>
+	        <TextView 
+	            style="@style/text_label"
+	            android:id="@+id/tv_address"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="@dimen/dimen_large"
+	            android:text="南京市长江路88号12楼"/>
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

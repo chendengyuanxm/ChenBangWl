@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconEditText">
+        <attr name="etHint" format="reference|string"></attr>
+        <attr name="etTextSize" format="reference|dimension"></attr>
+        <attr name="etText" format="reference|string"></attr>
+        <attr name="etInputType" format="reference"></attr>
+        <attr name="etInputMaxLen" format="integer"></attr>
+        
+        <attr name="leftIcon" format="reference"></attr>
+        <attr name="rightIcon" format="reference"></attr>
+    </declare-styleable>
+    
+    <declare-styleable name="SignaturePad">
+        <attr name="minWidth" format="dimension" />
+        <attr name="maxWidth" format="dimension" />
+        <attr name="penColor" format="color" />
+        <attr name="velocityFilterWeight" format="float" />
+        <attr name="background" format="reference"/>
+    </declare-styleable>
+</resources>

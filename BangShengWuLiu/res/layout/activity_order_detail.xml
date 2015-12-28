@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_topbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_normal"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/iv_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_store" />
+
+            <TextView
+                android:id="@+id/tv_merchant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/iv_merchant"
+                android:text="天猫" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2015-06-20 14:50:30"
+                android:textColor="@color/text_label"
+                android:textSize="@dimen/text_label_litter" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dip"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:background="@color/line_gray" />
+        
+        <com.devin.bangsheng.view.TableContain
+            android:id="@+id/tableContain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_small" />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dip"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:background="@color/line_gray" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_normal"
+            android:orientation="horizontal">
+            <TextView 
+                style="@style/text_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="代收货款：           "/>
+            <TextView 
+                android:id="@+id/tv_payAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="@dimen/text_label"
+                android:textColor="@color/text_label_red"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_big"
+        android:layout_marginRight="@dimen/dimen_big"
+        android:layout_marginTop="@dimen/dimen_larger"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/btn_send_sms"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_send_sms"/>
+        <Button 
+            android:id="@+id/btn_call_phone"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_weight="1"
+            android:background="@drawable/selector_call_phone"/>
+        <Button 
+            android:id="@+id/btn_navigate_map"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_normal"
+            android:layout_weight="1"
+            android:background="@drawable/selector_map_navigation"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"/>
+    
+    <Button 
+        style="@style/button1"
+        android:id="@+id/btn_deal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:layout_marginLeft="@dimen/button_margin_left"
+        android:layout_marginRight="@dimen/button_margin_right"
+        android:layout_marginBottom="@dimen/page_margin_bottom"
+        android:text="反馈"/>
+</LinearLayout>

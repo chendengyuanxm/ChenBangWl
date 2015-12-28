@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BangShengWuLiu</string>
+    <string name="hello_world">Hello world!</string>
+	
+    <string name="scan_text">请将条码放入到扫描框中进行扫描</string>
+    <string name="function_not_support">该功能暂未支持，敬请期待</string>
+</resources>

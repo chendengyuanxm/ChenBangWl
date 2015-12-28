@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg" >
+    
+    <ImageView 
+	    android:id="@+id/iv_logo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="40dip"
+	    android:src="@drawable/logo_login"/>
+    
+    <LinearLayout 
+        android:id="@+id/ll_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_large"
+        android:layout_marginRight="@dimen/dimen_large"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dip"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView 
+                android:id="@+id/iv_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_user"/>
+            <EditText 
+                android:id="@+id/et_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="员工号"
+                android:textColorHint="#aeaeae"
+                android:textSize="@dimen/text_label_large"
+                android:textColor="@color/text_label_white"
+                android:paddingLeft="15dip"
+                android:paddingRight="5dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:background="@null"/>
+        </LinearLayout>
+        
+        <View android:layout_width="match_parent" android:layout_height="1dip"
+            android:background="@color/white" android:layout_marginTop="10dip"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal">
+            <ImageView 
+                android:id="@+id/iv_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_password1"/>
+            <EditText 
+                android:id="@+id/et_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="登录密码"
+                android:textColorHint="#aeaeae"
+                android:textSize="@dimen/text_label_large"
+                android:textColor="@color/text_label_white"
+                android:inputType="textPassword"
+                android:paddingLeft="15dip"
+                android:paddingRight="5dip"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:background="@null"/>
+        </LinearLayout>
+        
+        <View android:layout_width="match_parent" android:layout_height="1dip"
+            android:background="@color/white" android:layout_marginTop="10dip"/>
+        
+        <CheckBox 
+            android:id="@+id/cb_remeber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="  记住用户名"
+            android:textColor="@color/text_label_white"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:visibility="invisible">
+            <TextView 
+                android:id="@+id/tv_tmnlNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="终端号：930005026"
+                android:textSize="@dimen/text_label"
+                android:textColor="#60544545"/>
+            <TextView 
+                android:id="@+id/tv_siteNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="站点号：南京晨邦"
+                android:textSize="@dimen/text_label"
+                android:textColor="#60544545"/>
+        </RelativeLayout>
+        
+        <Button 
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/bolder_white"
+            android:text="登录"
+            android:textColor="@color/text_label_white"
+            android:textSize="@dimen/text_label_large"/>
+    </LinearLayout>
+    
+	<TextView 
+	    android:id="@+id/tv_version"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="20dip"
+	    android:text="版本号  1.0.0"
+	    android:textColor="@color/text_label_white"/>
+</RelativeLayout>

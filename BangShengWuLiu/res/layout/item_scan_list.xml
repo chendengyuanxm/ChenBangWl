@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="3dip"
+    android:paddingBottom="2dip"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    style="@style/text_label"
+	    android:id="@+id/tv_sort"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:text="0"
+	    android:textColor="@color/text_label_white"/>
+	<TextView 
+	    style="@style/text_label"
+	    android:id="@+id/tv_orderNo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="@dimen/dimen_big"
+	    android:layout_toRightOf="@id/tv_sort"
+	    android:text="10000000000"
+	    android:textColor="@color/text_label_white"/>
+	<ImageView 
+	    android:id="@+id/iv_del"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/icon_del"/>
+</RelativeLayout>

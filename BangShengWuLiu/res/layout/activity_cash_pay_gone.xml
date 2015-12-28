@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/common_topbar"/>
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="@dimen/dimen_normal"
+	    android:paddingRight="@dimen/dimen_normal"
+	    android:paddingTop="@dimen/dimen_big"
+	    android:paddingBottom="@dimen/dimen_large"
+	    android:background="@color/white"
+	    android:orientation="vertical">
+	    <ImageView 
+	        android:id="@+id/iv_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_money"/>
+	    <TextView 
+	        style="@style/text_label"
+	        android:id="@+id/tv_label"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/iv_icon"
+	        android:layout_marginLeft="@dimen/dimen_big"
+	        android:text="请输入缴费金额"
+	        android:textSize="@dimen/text_label_large"/>
+	    <TextView 
+	        android:id="@+id/tv_amount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/tv_label"
+	        android:layout_marginTop="@dimen/dimen_large"
+	        android:layout_centerHorizontal="true"
+	        android:text="0.00"
+	        android:textSize="25sp"
+	        android:textColor="@color/text_label_red"/>
+	</RelativeLayout>
+	
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:visibility="invisible"/>
+	
+	<com.devin.bangsheng.view.InputPanel
+	    android:id="@+id/inputPanel"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal" />
+</LinearLayout>

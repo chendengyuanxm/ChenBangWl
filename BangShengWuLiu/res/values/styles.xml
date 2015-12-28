@@ -1,0 +1,72 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="editText">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:textColor">@color/text_label</item>
+    </style>
+    
+    <style name="text_label">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:textColor">@color/text_label</item>
+    </style>
+    
+    <style name="tab_radiobutton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="listView">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">false</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@drawable/list_select_color</item>
+    </style>
+    
+    <style name="options_dialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="button1">
+        <item name="android:textColor">@color/text_label_white</item>
+        <item name="android:background">@drawable/selector_button_1</item>
+    </style>
+    
+    <style name="button2">
+        <item name="android:textColor">@color/text_label_white</item>
+        <item name="android:background">@drawable/selector_button_2</item>
+    </style>
+	
+    <style name="spinner">
+        <item name="android:background">@color/gray</item>
+        <item name="android:padding">5dip</item>
+    </style>
+    
+    <style name="radiobutton">
+        <item name="android:textColor">@color/text_label</item>
+        <item name="android:textSize">@dimen/text_label</item>
+    </style>
+</resources>

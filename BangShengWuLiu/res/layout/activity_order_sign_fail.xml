@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/common_topbar"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/page_margin_bottom"
+            android:layout_marginLeft="@dimen/button_margin_left"
+            android:layout_marginRight="@dimen/button_margin_right"
+            android:text="完成" />
+        
+        <ImageView 
+            android:id="@+id/iv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="50dip"
+		    android:src="@drawable/img_failed"/>
+        
+        <TextView
+            android:id="@+id/tv_errCode" 
+            style="@style/text_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv"
+            android:layout_marginTop="20dip"
+            android:text="错误码："/>
+        <TextView 
+            android:id="@+id/tv_errMsg"
+            style="@style/text_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_errCode"
+            android:layout_marginTop="10dip"
+            android:text="错误原因："/>
+    </RelativeLayout>
+    
+</LinearLayout>
